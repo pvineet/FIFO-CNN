@@ -1,0 +1,1460 @@
+
+*** Running vivado
+    with args -log design_1_dataflow_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dataflow_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_dataflow_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/2019.2/bin/jsps/float16'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top design_1_dataflow_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4116 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 873.301 ; gain = 235.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_dataflow_0_0' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ip/design_1_dataflow_0_0/synth/design_1_dataflow_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'dataflow' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow.v:12]
+	Parameter C_S_AXI_CTRL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dataflow_CTRL_BUS_s_axi' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_CTRL_BUS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_WIDTH_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_WIDTH_CTRL bound to: 7'b0010100 
+	Parameter ADDR_HEIGHT_DATA_0 bound to: 7'b0011000 
+	Parameter ADDR_HEIGHT_CTRL bound to: 7'b0011100 
+	Parameter ADDR_BIAS_DATA_0 bound to: 7'b0100000 
+	Parameter ADDR_BIAS_CTRL bound to: 7'b0100100 
+	Parameter ADDR_NUM_SET_DATA_0 bound to: 7'b0101000 
+	Parameter ADDR_NUM_SET_CTRL bound to: 7'b0101100 
+	Parameter ADDR_STATUS_I_DATA_0 bound to: 7'b0110000 
+	Parameter ADDR_STATUS_I_CTRL bound to: 7'b0110100 
+	Parameter ADDR_STATUS_O_DATA_0 bound to: 7'b0111000 
+	Parameter ADDR_STATUS_O_CTRL bound to: 7'b0111100 
+	Parameter ADDR_COMPRESSED_IN_DATA_0 bound to: 7'b1000000 
+	Parameter ADDR_COMPRESSED_IN_CTRL bound to: 7'b1000100 
+	Parameter ADDR_COMPRESSED_OUT_DATA_0 bound to: 7'b1001000 
+	Parameter ADDR_COMPRESSED_OUT_CTRL bound to: 7'b1001100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_CTRL_BUS_s_axi.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow_CTRL_BUS_s_axi' (1#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_CTRL_BUS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_pro' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 22'b0000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 22'b0000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 22'b0000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 22'b0000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 22'b0000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 22'b0000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 22'b0000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 22'b0000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 22'b0000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 22'b0000000000001000000000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 22'b0000000000010000000000 
+	Parameter ap_ST_fsm_pp1_stage1 bound to: 22'b0000000000100000000000 
+	Parameter ap_ST_fsm_state60 bound to: 22'b0000000001000000000000 
+	Parameter ap_ST_fsm_state61 bound to: 22'b0000000010000000000000 
+	Parameter ap_ST_fsm_state62 bound to: 22'b0000000100000000000000 
+	Parameter ap_ST_fsm_state63 bound to: 22'b0000001000000000000000 
+	Parameter ap_ST_fsm_state64 bound to: 22'b0000010000000000000000 
+	Parameter ap_ST_fsm_state65 bound to: 22'b0000100000000000000000 
+	Parameter ap_ST_fsm_state66 bound to: 22'b0001000000000000000000 
+	Parameter ap_ST_fsm_state67 bound to: 22'b0010000000000000000000 
+	Parameter ap_ST_fsm_state68 bound to: 22'b0100000000000000000000 
+	Parameter ap_ST_fsm_state69 bound to: 22'b1000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:127]
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_bkb' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_bkb.v:50]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 512 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_bkb_ram' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_bkb.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_bkb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_bkb_ram' (2#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_bkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_bkb' (3#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_bkb.v:50]
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_fYi' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_fYi.v:37]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 512 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_fYi_ram' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_fYi.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_fYi.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_fYi_ram' (4#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_fYi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_fYi' (5#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_fYi.v:37]
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_ncg' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_ncg.v:46]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 65536 - type: integer 
+	Parameter AddressWidth bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Block_codeRepl62_ncg_ram' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_ncg.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 16 - type: integer 
+	Parameter MEM_SIZE bound to: 65536 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_ncg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_ncg_ram' (6#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_ncg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_ncg' (7#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_ncg.v:46]
+INFO: [Synth 8-6157] synthesizing module 'dataflow_uitofp_3ocq' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_uitofp_3ocq.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dataflow_ap_uitofp_4_no_dsp_32' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_uitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_uitofp_4_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_ap_uitofp_4_no_dsp_32' (22#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_uitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow_uitofp_3ocq' (23#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_uitofp_3ocq.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dataflow_sptohp_3pcA' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_sptohp_3pcA.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dataflow_ap_sptohp_0_no_dsp_32' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_sptohp_0_no_dsp_32.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 16 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_sptohp_0_no_dsp_32.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_ap_sptohp_0_no_dsp_32' (29#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_sptohp_0_no_dsp_32.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow_sptohp_3pcA' (30#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_sptohp_3pcA.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dataflow_hadd_16nqcK' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hadd_16nqcK.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dataflow_ap_hadd_3_full_dsp_16' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hadd_3_full_dsp_16.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_C_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 16 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 15 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -24 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hadd_3_full_dsp_16.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_ap_hadd_3_full_dsp_16' (41#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hadd_3_full_dsp_16.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow_hadd_16nqcK' (42#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hadd_16nqcK.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dataflow_hmul_16nrcU' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hmul_16nrcU.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dataflow_ap_hmul_2_max_dsp_16' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hmul_2_max_dsp_16.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_C_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 16 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 15 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -24 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hmul_2_max_dsp_16.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_ap_hmul_2_max_dsp_16' (53#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hmul_2_max_dsp_16.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow_hmul_16nrcU' (54#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hmul_16nrcU.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dataflow_hcmp_16nsc4' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+	Parameter AP_OEQ bound to: 5'b00001 
+	Parameter AP_OGT bound to: 5'b00010 
+	Parameter AP_OGE bound to: 5'b00011 
+	Parameter AP_OLT bound to: 5'b00100 
+	Parameter AP_OLE bound to: 5'b00101 
+	Parameter AP_ONE bound to: 5'b00110 
+	Parameter AP_UNO bound to: 5'b01000 
+	Parameter OP_EQ bound to: 8'b00010100 
+	Parameter OP_GT bound to: 8'b00100100 
+	Parameter OP_GE bound to: 8'b00110100 
+	Parameter OP_LT bound to: 8'b00001100 
+	Parameter OP_LE bound to: 8'b00011100 
+	Parameter OP_NE bound to: 8'b00101100 
+	Parameter OP_UO bound to: 8'b00000100 
+INFO: [Synth 8-638] synthesizing module 'dataflow_ap_hcmp_0_no_dsp_16' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hcmp_0_no_dsp_16.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_C_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 11 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 15 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -24 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hcmp_0_no_dsp_16.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'dataflow_ap_hcmp_0_no_dsp_16' (57#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/ip/dataflow_ap_hcmp_0_no_dsp_16.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow_hcmp_16nsc4' (58#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter W bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (59#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (60#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (61#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (61#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (61#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (61#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/regslice_core.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7226]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7240]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7242]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7356]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7358]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7360]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7362]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7364]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7404]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7406]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7408]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7418]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7420]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7422]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7424]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7426]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7428]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7430]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7432]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7434]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7436]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7438]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7440]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7442]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7444]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7446]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7448]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7450]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7656]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7658]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7660]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7662]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7664]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7666]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7668]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7670]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7680]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7682]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7684]
+INFO: [Synth 8-6155] done synthesizing module 'Block_codeRepl62_pro' (62#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'dataflow' (63#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dataflow_0_0' (64#1) [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ip/design_1_dataflow_0_0/synth/design_1_dataflow_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized2 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_ne_im__parameterized0 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized1 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SINIT
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port m_axis_result_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port m_axis_result_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port aclken
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port aresetn
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_a_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_a_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_b_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_b_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tvalid
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[15]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[14]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[13]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[12]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[11]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[10]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[9]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[8]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[7]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[6]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[5]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[4]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[3]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[2]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[1]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tdata[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_c_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tdata[7]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tdata[6]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tdata[2]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tdata[1]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tdata[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port s_axis_operation_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_9_viv__parameterized7 has unconnected port m_axis_result_tready
+WARNING: [Synth 8-3331] design dataflow_hcmp_16nsc4 has unconnected port reset
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized9 has unconnected port B[4]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized88 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized88 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized88 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized88 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized88 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1112.332 ; gain = 474.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1112.332 ; gain = 474.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1112.332 ; gain = 474.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1112.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ip/design_1_dataflow_0_0/constraints/dataflow_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ip/design_1_dataflow_0_0/constraints/dataflow_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.runs/design_1_dataflow_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.runs/design_1_dataflow_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1261.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 225 instances were transformed.
+  FDE => FDRE: 73 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 152 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1281.164 ; gain = 19.926
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1281.164 ; gain = 643.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1281.164 ; gain = 643.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.runs/design_1_dataflow_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1281.164 ; gain = 643.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'dataflow_CTRL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'dataflow_CTRL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "op_tdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter1_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter1_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3339]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter2_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3347]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter3_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3354]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter4_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3361]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter5_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3368]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter6_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3375]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter7_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3382]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter8_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3389]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter9_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3396]
+INFO: [Synth 8-4471] merging register 'zext_ln394_reg_4483_pp1_iter2_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7784]
+INFO: [Synth 8-4471] merging register 'zext_ln394_reg_4483_pp1_iter3_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7785]
+INFO: [Synth 8-4471] merging register 'zext_ln394_reg_4483_pp1_iter4_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7786]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7787]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter7_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7788]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter8_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7789]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter9_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7790]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter10_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7791]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter11_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7792]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter12_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7793]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter13_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7794]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter14_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7795]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter15_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7796]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter16_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7797]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter17_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7798]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter18_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7799]
+INFO: [Synth 8-4471] merging register 'zext_ln392_reg_5037_pp1_iter19_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7800]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7801]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter7_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7802]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter8_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7803]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter9_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7804]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter10_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7805]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter11_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7806]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter12_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7807]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter13_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7808]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter14_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7809]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter15_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7810]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter16_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7811]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter17_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7812]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter18_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7813]
+INFO: [Synth 8-4471] merging register 'zext_ln393_reg_5042_pp1_iter19_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7814]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter8_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7816]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter9_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7817]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter10_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7818]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter11_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7819]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter12_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7820]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter13_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7821]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter14_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7822]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter15_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7823]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter16_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7824]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter17_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7825]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter18_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7826]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter19_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7827]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter20_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7828]
+INFO: [Synth 8-4471] merging register 'zext_ln479_reg_5157_pp1_iter21_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7376]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7830]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter10_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7831]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter11_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7832]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter12_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7833]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter13_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7834]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter14_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7835]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter15_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7836]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter16_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7837]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter17_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7838]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter18_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7839]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter19_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7840]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter20_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7841]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter21_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7842]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter22_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7843]
+INFO: [Synth 8-4471] merging register 'zext_ln480_reg_5199_pp1_iter23_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7378]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter10_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7846]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter11_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7847]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter12_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7848]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter13_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7849]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter14_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7850]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter15_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7851]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter16_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7852]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter17_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7853]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter18_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7854]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter19_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7855]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter20_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7856]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter21_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7857]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter22_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7858]
+INFO: [Synth 8-4471] merging register 'zext_ln481_reg_5204_pp1_iter23_reg_reg[63:32]' into 'zext_ln394_reg_4483_reg[63:32]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7380]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter10_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter10_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3304]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter11_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter11_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3311]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter12_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter12_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3318]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter13_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter13_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3325]
+INFO: [Synth 8-4471] merging register 'ap_phi_reg_pp1_iter14_i0_2_reg_1006_reg[15:0]' into 'ap_phi_reg_pp1_iter14_cur0_0_4_reg_1034_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3332]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter23_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3443]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter22_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3442]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter21_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3441]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter20_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3440]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter19_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3439]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter18_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3438]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter17_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3437]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter16_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3436]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter15_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3435]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter14_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3434]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter13_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3433]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter12_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3432]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter11_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3431]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_pp1_iter10_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3430]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln481_reg_5204_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:4188]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter23_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3429]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter22_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3428]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter21_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3427]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter20_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3426]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter19_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3425]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter18_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3424]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter17_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3423]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter16_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter15_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3421]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter14_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter13_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3419]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter12_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3418]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter11_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3417]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_pp1_iter10_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3416]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln480_reg_5199_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:4187]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter19_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3613]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter18_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3612]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter17_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3611]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter16_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3610]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter15_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3609]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter14_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3608]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter13_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3607]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter12_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3606]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter11_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3605]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter10_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3604]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter9_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3604]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter8_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3615]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_pp1_iter7_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3614]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_5037_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:4174]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter19_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3626]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter18_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3625]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter17_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3624]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter16_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3623]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter15_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3622]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter14_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3621]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter13_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3620]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter12_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3619]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter11_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3618]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter10_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3617]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter9_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3617]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter8_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3628]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_pp1_iter7_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3627]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln393_reg_5042_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:4175]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter21_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3645]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter20_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3644]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter19_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3643]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter18_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3642]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter17_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3641]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter16_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3640]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter15_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3639]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter14_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3638]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter13_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3637]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter12_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3636]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter11_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3635]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter10_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3634]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter9_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3634]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_pp1_iter8_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3646]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln479_reg_5157_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:4181]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln394_reg_4483_pp1_iter4_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3633]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln394_reg_4483_pp1_iter3_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3632]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln394_reg_4483_pp1_iter2_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3631]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln394_reg_4483_pp1_iter1_reg_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3630]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln394_reg_4483_reg' and it is trimmed from '32' to '9' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3706]
+WARNING: [Synth 8-3936] Found unconnected internal register 'psum_buf_r_1_reg_983_pp1_iter6_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3562]
+WARNING: [Synth 8-3936] Found unconnected internal register 'psum_buf_r_1_reg_983_pp1_iter5_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3561]
+WARNING: [Synth 8-3936] Found unconnected internal register 'psum_buf_r_1_reg_983_pp1_iter4_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3560]
+WARNING: [Synth 8-3936] Found unconnected internal register 'psum_buf_r_1_reg_983_pp1_iter3_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3559]
+WARNING: [Synth 8-3936] Found unconnected internal register 'psum_buf_r_1_reg_983_pp1_iter2_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3558]
+WARNING: [Synth 8-3936] Found unconnected internal register 'psum_buf_r_1_reg_983_pp1_iter1_reg_reg' and it is trimmed from '32' to '16' bits. [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:3557]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'dataflow_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'dataflow_CTRL_BUS_s_axi'
+INFO: [Synth 8-3971] The signal "Block_codeRepl62_bkb_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:31 . Memory (MB): peak = 1281.164 ; gain = 643.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized17) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized17) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_uitofp_3ocq_U1/dataflow_ap_uitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_DELAY' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized3) to 'inst/Block_codeRepl62_pro_U0/dataflow_sptohp_3pcA_U2/dataflow_ap_sptohp_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hadd_16nqcK:/dataflow_ap_hadd_3_full_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hadd_16nqcK:/dataflow_ap_hadd_3_full_dsp_16_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hadd_16nqcK:/dataflow_ap_hadd_3_full_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hadd_16nqcK:/dataflow_ap_hadd_3_full_dsp_16_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized3) to 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized3) to 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized26) to 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized26) to 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hmul_16nrcU:/dataflow_ap_hmul_2_max_dsp_16_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized3) to 'dataflow_hcmp_16nsc4:/dataflow_ap_hcmp_0_no_dsp_16_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |Block_codeRepl62_pro__GB0 |           1|     30296|
+|2     |Block_codeRepl62_pro__GB1 |           1|     26311|
+|3     |dataflow__GC0             |           1|      1221|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U41/ce_r_reg' into 'dataflow_hcmp_16nsc4_U40/ce_r_reg' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:99]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U41/din1_buf1_reg[15:0]' into 'dataflow_hcmp_16nsc4_U40/din1_buf1_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:73]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U42/ce_r_reg' into 'dataflow_hcmp_16nsc4_U40/ce_r_reg' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:99]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U42/din1_buf1_reg[15:0]' into 'dataflow_hcmp_16nsc4_U40/din1_buf1_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:73]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U42/opcode_buf1_reg[4:0]' into 'dataflow_hcmp_16nsc4_U41/opcode_buf1_reg[4:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:94]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U43/ce_r_reg' into 'dataflow_hcmp_16nsc4_U40/ce_r_reg' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:99]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U43/din1_buf1_reg[15:0]' into 'dataflow_hcmp_16nsc4_U40/din1_buf1_reg[15:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:73]
+INFO: [Synth 8-4471] merging register 'dataflow_hcmp_16nsc4_U43/opcode_buf1_reg[4:0]' into 'dataflow_hcmp_16nsc4_U41/opcode_buf1_reg[4:0]' [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/dataflow_hcmp_16nsc4.v:94]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7344]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.srcs/sources_1/bd/design_1/ipshared/87a6/hdl/verilog/Block_codeRepl62_pro.v:7338]
+INFO: [Synth 8-3971] The signal "inst/psum_fifo0_0_0_U/Block_codeRepl62_bkb_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/psum_fifo0_0_1_U/Block_codeRepl62_bkb_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/psum_fifo0_0_2_U/Block_codeRepl62_bkb_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/psum_fifo0_1_0_U/Block_codeRepl62_bkb_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/psum_fifo0_3_2_U/Block_codeRepl62_bkb_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 16 RAM instances of RAM psum_buf0_U/Block_codeRepl62_ncg_ram_U/ram_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter2_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[9]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[10]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[11]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[12]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[13]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[9]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[10]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[11]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[12]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[13]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[9]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[10]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[11]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[12]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[13]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[9]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[10]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[11]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[12]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[13]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[9]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[10]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[11]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[12]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[13]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[9]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[10]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[11]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[12]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[13]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[15]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[5]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[0]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[1]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[2]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[3]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[4]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[6]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[7]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[8]' (FDE) to 'inst/Block_codeRepl62_pro_U0i_2_1/ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/dataflow_uitofp_3ocq_U1/\dataflow_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/NEED_Z_DET.Z_DET/ENCODE[1].DIST_OVER_DEL/i_pipe /\opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/dataflow_uitofp_3ocq_U1/\dataflow_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\dataflow_hcmp_16nsc4_U41/opcode_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\dataflow_hcmp_16nsc4_U41/opcode_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter3_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/dataflow_uitofp_3ocq_U1/\dataflow_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter4_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/dataflow_uitofp_3ocq_U1/\dataflow_ap_uitofp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter5_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter6_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter7_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter8_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter9_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter10_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter11_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter12_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter13_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\ap_phi_reg_pp1_iter14_cur0_0_4_reg_1034_reg[14] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized3.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_2/\shl_ln427_reg_4322_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/\val_V_1_reg_4681_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_codeRepl62_pro_U0i_2_1/ap_done_reg_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:49 ; elapsed = 00:02:58 . Memory (MB): peak = 1281.164 ; gain = 643.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |Block_codeRepl62_pro__GB0 |           1|     25161|
+|2     |Block_codeRepl62_pro__GB1 |           1|      9422|
+|3     |dataflow__GC0             |           1|       806|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:02 ; elapsed = 00:03:11 . Memory (MB): peak = 1281.164 ; gain = 643.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:56 ; elapsed = 00:04:05 . Memory (MB): peak = 1505.551 ; gain = 867.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |dataflow__GC0 |           1|       806|
+|2     |dataflow_GT0  |           1|     34583|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_codeRepl62_pro_U0/val_V_2_reg_4698_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_codeRepl62_pro_U0/val_V_reg_5344_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_codeRepl62_pro_U0/ush_3_reg_4725_reg[5] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:12 ; elapsed = 00:04:24 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Block_codeRepl62_pro_U0/rd_zero_cnt3_1_fu_238_reg[31] is being inverted and renamed to Block_codeRepl62_pro_U0/rd_zero_cnt3_1_fu_238_reg[31]_inv.
+INFO: [Synth 8-5365] Flop Block_codeRepl62_pro_U0/rd_zero_cnt2_1_fu_242_reg[31] is being inverted and renamed to Block_codeRepl62_pro_U0/rd_zero_cnt2_1_fu_242_reg[31]_inv.
+INFO: [Synth 8-5365] Flop Block_codeRepl62_pro_U0/rd_zero_cnt0_1_fu_250_reg[31] is being inverted and renamed to Block_codeRepl62_pro_U0/rd_zero_cnt0_1_fu_250_reg[31]_inv.
+INFO: [Synth 8-6064] Net \Block_codeRepl62_pro_U0/psum_buf0_ce1  is driving 128 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
+INFO: [Synth 8-6064] Net \Block_codeRepl62_pro_U0/psum_buf0_ce0  is driving 34 big block pins (URAM, BRAM and DSP loads). Created 5 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:18 ; elapsed = 00:04:30 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:19 ; elapsed = 00:04:31 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:22 ; elapsed = 00:04:34 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:23 ; elapsed = 00:04:35 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:23 ; elapsed = 00:04:35 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:23 ; elapsed = 00:04:35 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   274|
+|2     |DSP48E1    |    19|
+|3     |DSP48E1_1  |    19|
+|4     |DSP48E1_10 |     2|
+|5     |DSP48E1_2  |    18|
+|6     |DSP48E1_3  |    18|
+|7     |DSP48E1_9  |     4|
+|8     |LUT1       |   277|
+|9     |LUT2       |   797|
+|10    |LUT3       |  2247|
+|11    |LUT4       |  1940|
+|12    |LUT5       |  1362|
+|13    |LUT6       |  2214|
+|14    |LUT6_2     |   133|
+|15    |MUXCY      |  1189|
+|16    |MUXF7      |     7|
+|17    |RAMB18E1_2 |     7|
+|18    |RAMB18E1_3 |     5|
+|19    |RAMB36E1   |    16|
+|20    |RAMB36E1_2 |    16|
+|21    |SRL16E     |    98|
+|22    |XORCY      |   530|
+|23    |FDE        |    73|
+|24    |FDRE       |  9239|
+|25    |FDSE       |     2|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:23 ; elapsed = 00:04:35 . Memory (MB): peak = 1512.688 ; gain = 874.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:12 ; elapsed = 00:04:13 . Memory (MB): peak = 1512.688 ; gain = 706.051
+Synthesis Optimization Complete : Time (s): cpu = 00:04:24 ; elapsed = 00:04:36 . Memory (MB): peak = 1512.688 ; gain = 874.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.623 . Memory (MB): peak = 1512.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2330 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1512.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 612 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 406 instances
+  FDE => FDRE: 73 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 133 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+433 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:44 ; elapsed = 00:04:59 . Memory (MB): peak = 1512.688 ; gain = 1176.402
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1512.688 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.runs/design_1_dataflow_0_0_synth_1/design_1_dataflow_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_dataflow_0_0, cache-ID = 2f6da964872e3015
+INFO: [Coretcl 2-1174] Renamed 2049 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1512.688 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/vpanchbhaiyye/Documents/jsps_half/jsps_half.runs/design_1_dataflow_0_0_synth_1/design_1_dataflow_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_dataflow_0_0_utilization_synth.rpt -pb design_1_dataflow_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 15 01:41:12 2020...

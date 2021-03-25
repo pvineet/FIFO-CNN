@@ -1,0 +1,57 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jun 17 12:05:11 2020
+| Host         : RM-LT-180 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jsps_half_dataflow_half_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of jsps_half_dataflow_half_0_0 (xilinx.com:hls:dataflow_half:1.0) from (Rev. 2006161955) to (Rev. 2006171038)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jun 16 19:57:11 2020
+| Host         : RM-LT-180 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jsps_half_dataflow_half_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of jsps_half_dataflow_half_0_0 (xilinx.com:hls:dataflow_half:1.0) from (Rev. 2006161941) to (Rev. 2006161955)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'jsps_half_dataflow_half_0_0'.
+
+
+-Upgrade has removed interface 'compressed_out'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'jsps_half_dataflow_half_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'compressed_out'
+
+

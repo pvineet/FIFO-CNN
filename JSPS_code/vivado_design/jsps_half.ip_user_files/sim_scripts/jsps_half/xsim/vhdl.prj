@@ -1,0 +1,43 @@
+vhdl xbip_utils_v3_0_10  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/b795/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vhdl axi_utils_v2_0_6  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_6  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_wrapper_v3_0_4  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_addsub_v3_0_6  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/910d/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_multadd_v3_0_6  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/b0ac/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_bram18k_v3_0_6  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/d367/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_16  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/ce84/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vhdl floating_point_v7_1_9  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/6533/hdl/ip/dataflow_half_ap_hadd_3_full_dsp_16.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/6533/hdl/ip/dataflow_half_ap_hcmp_0_no_dsp_16.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/6533/hdl/ip/dataflow_half_ap_hmul_2_max_dsp_16.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/6533/hdl/ip/dataflow_half_ap_sptohp_0_no_dsp_32.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ipshared/6533/hdl/ip/dataflow_half_ap_uitofp_4_no_dsp_32.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_dataflow_half_0_0/sim/jsps_half_dataflow_half_0_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_axi_dma_0_0/sim/jsps_half_axi_dma_0_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_axi_dma_1_0/sim/jsps_half_axi_dma_1_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_axi_dma_2_0/sim/jsps_half_axi_dma_2_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_axi_dma_3_0/sim/jsps_half_axi_dma_3_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_axi_dma_4_0/sim/jsps_half_axi_dma_4_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_3f22_psr_aclk_0.vhd" \
+"../../../../jsps_half.srcs/sources_1/bd/jsps_half/ip/jsps_half_rst_ps7_0_50M_0/sim/jsps_half_rst_ps7_0_50M_0.vhd" \
+
+nosort
